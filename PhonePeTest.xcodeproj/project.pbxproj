@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C7DADB22BA5BD9D00D00E68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADB12BA5BD9D00D00E68 /* AppDelegate.swift */; };
 		5C7DADB42BA5BD9D00D00E68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADB32BA5BD9D00D00E68 /* SceneDelegate.swift */; };
-		5C7DADB62BA5BD9D00D00E68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADB52BA5BD9D00D00E68 /* ViewController.swift */; };
+		5C7DADB62BA5BD9D00D00E68 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADB52BA5BD9D00D00E68 /* HomeViewController.swift */; };
 		5C7DADB92BA5BD9D00D00E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DADB72BA5BD9D00D00E68 /* Main.storyboard */; };
 		5C7DADBB2BA5BD9F00D00E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DADBA2BA5BD9F00D00E68 /* Assets.xcassets */; };
 		5C7DADBE2BA5BD9F00D00E68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7DADBC2BA5BD9F00D00E68 /* LaunchScreen.storyboard */; };
@@ -24,6 +24,7 @@
 		5C7DADED2BA5BECE00D00E68 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE72BA5BECE00D00E68 /* Venues.swift */; };
 		5C7DADEF2BA5BFC300D00E68 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADEE2BA5BFC300D00E68 /* APIService.swift */; };
 		5C7DADF32BA5C2DB00D00E68 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADF22BA5C2DB00D00E68 /* APIConstants.swift */; };
+		5C7DADF72BA5C6EA00D00E68 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 		5C7DADAE2BA5BD9D00D00E68 /* PhonePeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7DADB12BA5BD9D00D00E68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C7DADB32BA5BD9D00D00E68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C7DADB52BA5BD9D00D00E68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C7DADB52BA5BD9D00D00E68 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C7DADB82BA5BD9D00D00E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C7DADBA2BA5BD9F00D00E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7DADBD2BA5BD9F00D00E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		5C7DADE72BA5BECE00D00E68 /* Venues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
 		5C7DADEE2BA5BFC300D00E68 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5C7DADF22BA5C2DB00D00E68 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +117,12 @@
 		5C7DADB02BA5BD9D00D00E68 /* PhonePeTest */ = {
 			isa = PBXGroup;
 			children = (
+				5C7DADF52BA5C6DD00D00E68 /* Components */,
+				5C7DADF42BA5C6CE00D00E68 /* HomeScreen */,
 				5C7DADF12BA5C2D000D00E68 /* Constants */,
 				5C7DADE12BA5BE1500D00E68 /* Service */,
 				5C7DADB12BA5BD9D00D00E68 /* AppDelegate.swift */,
 				5C7DADB32BA5BD9D00D00E68 /* SceneDelegate.swift */,
-				5C7DADB52BA5BD9D00D00E68 /* ViewController.swift */,
-				5C7DADB72BA5BD9D00D00E68 /* Main.storyboard */,
 				5C7DADBA2BA5BD9F00D00E68 /* Assets.xcassets */,
 				5C7DADBC2BA5BD9F00D00E68 /* LaunchScreen.storyboard */,
 				5C7DADBF2BA5BD9F00D00E68 /* Info.plist */,
@@ -173,6 +175,23 @@
 				5C7DADF22BA5C2DB00D00E68 /* APIConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		5C7DADF42BA5C6CE00D00E68 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5C7DADB52BA5BD9D00D00E68 /* HomeViewController.swift */,
+				5C7DADB72BA5BD9D00D00E68 /* Main.storyboard */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		5C7DADF52BA5C6DD00D00E68 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,13 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C7DADB62BA5BD9D00D00E68 /* ViewController.swift in Sources */,
+				5C7DADB62BA5BD9D00D00E68 /* HomeViewController.swift in Sources */,
 				5C7DADF32BA5C2DB00D00E68 /* APIConstants.swift in Sources */,
 				5C7DADED2BA5BECE00D00E68 /* Venues.swift in Sources */,
 				5C7DADE82BA5BECE00D00E68 /* Stats.swift in Sources */,
 				5C7DADEB2BA5BECE00D00E68 /* Geolocation.swift in Sources */,
 				5C7DADB22BA5BD9D00D00E68 /* AppDelegate.swift in Sources */,
 				5C7DADE92BA5BECE00D00E68 /* Meta.swift in Sources */,
+				5C7DADF72BA5C6EA00D00E68 /* LoaderView.swift in Sources */,
 				5C7DADEF2BA5BFC300D00E68 /* APIService.swift in Sources */,
 				5C7DADEC2BA5BECE00D00E68 /* NearbyHomeResponse.swift in Sources */,
 				5C7DADEA2BA5BECE00D00E68 /* Location.swift in Sources */,
