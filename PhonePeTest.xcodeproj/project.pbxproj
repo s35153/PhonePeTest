@@ -27,6 +27,7 @@
 		5C7DADF72BA5C6EA00D00E68 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */; };
 		5C7DADFA2BA5C81E00D00E68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7DADF92BA5C81E00D00E68 /* SnapKit */; };
 		5C7DADFD2BA5CF4200D00E68 /* UserLocationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADFC2BA5CF4200D00E68 /* UserLocationMock.swift */; };
+		5C7DADFF2BA5CFF100D00E68 /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		5C7DADF22BA5C2DB00D00E68 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		5C7DADFC2BA5CF4200D00E68 /* UserLocationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationMock.swift; sourceTree = "<group>"; };
+		5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				5C7DADB52BA5BD9D00D00E68 /* HomeViewController.swift */,
+				5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */,
 				5C7DADB72BA5BD9D00D00E68 /* Main.storyboard */,
 			);
 			path = HomeScreen;
@@ -353,6 +356,7 @@
 				5C7DADFD2BA5CF4200D00E68 /* UserLocationMock.swift in Sources */,
 				5C7DADE92BA5BECE00D00E68 /* Meta.swift in Sources */,
 				5C7DADF72BA5C6EA00D00E68 /* LoaderView.swift in Sources */,
+				5C7DADFF2BA5CFF100D00E68 /* HomeViewController+Extensions.swift in Sources */,
 				5C7DADEF2BA5BFC300D00E68 /* APIService.swift in Sources */,
 				5C7DADEC2BA5BECE00D00E68 /* NearbyHomeResponse.swift in Sources */,
 				5C7DADEA2BA5BECE00D00E68 /* Location.swift in Sources */,
