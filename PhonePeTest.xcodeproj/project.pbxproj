@@ -26,6 +26,7 @@
 		5C7DADF32BA5C2DB00D00E68 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADF22BA5C2DB00D00E68 /* APIConstants.swift */; };
 		5C7DADF72BA5C6EA00D00E68 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */; };
 		5C7DADFA2BA5C81E00D00E68 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7DADF92BA5C81E00D00E68 /* SnapKit */; };
+		5C7DADFD2BA5CF4200D00E68 /* UserLocationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADFC2BA5CF4200D00E68 /* UserLocationMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		5C7DADEE2BA5BFC300D00E68 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		5C7DADF22BA5C2DB00D00E68 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		5C7DADFC2BA5CF4200D00E68 /* UserLocationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		5C7DADB02BA5BD9D00D00E68 /* PhonePeTest */ = {
 			isa = PBXGroup;
 			children = (
+				5C7DADFB2BA5CF3300D00E68 /* Mocks */,
 				5C7DADF52BA5C6DD00D00E68 /* Components */,
 				5C7DADF42BA5C6CE00D00E68 /* HomeScreen */,
 				5C7DADF12BA5C2D000D00E68 /* Constants */,
@@ -194,6 +197,14 @@
 				5C7DADF62BA5C6EA00D00E68 /* LoaderView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		5C7DADFB2BA5CF3300D00E68 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5C7DADFC2BA5CF4200D00E68 /* UserLocationMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +350,7 @@
 				5C7DADE82BA5BECE00D00E68 /* Stats.swift in Sources */,
 				5C7DADEB2BA5BECE00D00E68 /* Geolocation.swift in Sources */,
 				5C7DADB22BA5BD9D00D00E68 /* AppDelegate.swift in Sources */,
+				5C7DADFD2BA5CF4200D00E68 /* UserLocationMock.swift in Sources */,
 				5C7DADE92BA5BECE00D00E68 /* Meta.swift in Sources */,
 				5C7DADF72BA5C6EA00D00E68 /* LoaderView.swift in Sources */,
 				5C7DADEF2BA5BFC300D00E68 /* APIService.swift in Sources */,
