@@ -23,6 +23,7 @@ final class HomeViewViewModel {
     var onDataUpdate: (() -> Void)?
 
     func fetchData() {
+        fetchForFirstAppSession()
         let latitude = UserDataMock.shared.latitude
         let longitude = UserDataMock.shared.longitude
         let range = UserDataMock.shared.initialSearchRange
@@ -30,6 +31,7 @@ final class HomeViewViewModel {
 
         APIService.fetchVenues(latitude: latitude, longitude: longitude, range: range, query: query) { [weak self] data in
             self?._venues = data?.venues ?? []
+            CacheService.shared.saveDataToUserDefaults(data: data?.venues)
             DispatchQueue.main.async {
                 self?.onDataUpdate?()
             }
@@ -55,4 +57,12 @@ final class HomeViewViewModel {
     // MARK: Private
     private var _venues: [Venues] = []
     private var searchText = ""
+    private var freshAppSession = true
+
+    private func fetchForFirstAppSession() {
+        guard freshAppSession else { return }
+        _venues = CacheService.shared.retrieveDataFromUserDefaults() ?? []
+        onDataUpdate?()
+        freshAppSession = false
+    }
 }

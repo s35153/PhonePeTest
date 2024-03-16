@@ -30,6 +30,7 @@
 		5C7DADFF2BA5CFF100D00E68 /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */; };
 		5C7DAE012BA5D0B600D00E68 /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DAE002BA5D0B600D00E68 /* HomeViewViewModel.swift */; };
 		5C7DAE032BA5D98900D00E68 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DAE022BA5D98900D00E68 /* HomeTableViewCell.swift */; };
+		5C7DAE062BA5DAFB00D00E68 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DAE052BA5DAFB00D00E68 /* CacheService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
 		5C7DAE002BA5D0B600D00E68 /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
 		5C7DAE022BA5D98900D00E68 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5C7DAE052BA5DAFB00D00E68 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				5C7DADBA2BA5BD9F00D00E68 /* Assets.xcassets */,
 				5C7DADBC2BA5BD9F00D00E68 /* LaunchScreen.storyboard */,
 				5C7DADBF2BA5BD9F00D00E68 /* Info.plist */,
+				5C7DAE052BA5DAFB00D00E68 /* CacheService.swift */,
 			);
 			path = PhonePeTest;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				5C7DADEA2BA5BECE00D00E68 /* Location.swift in Sources */,
 				5C7DAE032BA5D98900D00E68 /* HomeTableViewCell.swift in Sources */,
 				5C7DADB42BA5BD9D00D00E68 /* SceneDelegate.swift in Sources */,
+				5C7DAE062BA5DAFB00D00E68 /* CacheService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
