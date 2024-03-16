@@ -17,6 +17,7 @@ final class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupLoader()
         setupSearchBar()
+        setupSlider()
         setupTableView()
         setupKeyboardHandling()
 
@@ -47,12 +48,21 @@ final class HomeViewController: UIViewController {
         }
     }
 
+    private func setupSlider() {
+        view.addSubview(slider)
+
+        slider.snp.makeConstraints {
+            $0.left.right.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
+    }
+
     private func setupTableView() {
         view.addSubview(tableView)
 
         tableView.snp.makeConstraints {
             $0.top.equalTo(searchBar.snp.bottom).inset(-16)
-            $0.left.right.bottom.equalTo(view.safeAreaLayoutGuide)
+            $0.left.right.equalTo(view.safeAreaLayoutGuide)
+            $0.bottom.equalTo(slider.snp.top)
         }
     }
 
@@ -63,6 +73,12 @@ final class HomeViewController: UIViewController {
 
     @objc private func resignSearchBarFirstResponder() {
         searchBar.resignFirstResponder()
+    }
+
+    @objc func sliderValueChanged(_ sender: UISlider) {
+        let range = Int(sender.value)
+        UserDataMock.shared.initialSearchRange = range
+        viewModel.fetchData()
     }
 
 // MARK: - Private
@@ -78,6 +94,15 @@ final class HomeViewController: UIViewController {
         searchBar.placeholder = "Search"
         searchBar.delegate = self
         return searchBar
+    }()
+
+    private lazy var slider: UISlider = {
+        let slider = UISlider()
+        slider.minimumValue = 0
+        slider.maximumValue = 1000
+        slider.value = 1000
+        slider.addTarget(self, action: #selector(sliderValueChanged(_:)), for: .valueChanged)
+        return slider
     }()
 
     private lazy var tableView: UITableView = {

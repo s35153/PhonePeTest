@@ -13,5 +13,5 @@ final class UserDataMock {
     let latitude = 12.971599 // User's current Latitude
     let longitude = 77.594566 // User's current Longitude
     let initialSearchQuery = "s"
-    let initialSearchRange = "1200mi"
+    var initialSearchRange = 1000
 }
