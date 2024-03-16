@@ -16,6 +16,12 @@
 		5C7DADC92BA5BDA000D00E68 /* PhonePeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADC82BA5BDA000D00E68 /* PhonePeTestTests.swift */; };
 		5C7DADD32BA5BDA000D00E68 /* PhonePeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADD22BA5BDA000D00E68 /* PhonePeTestUITests.swift */; };
 		5C7DADD52BA5BDA000D00E68 /* PhonePeTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADD42BA5BDA000D00E68 /* PhonePeTestUITestsLaunchTests.swift */; };
+		5C7DADE82BA5BECE00D00E68 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE22BA5BECD00D00E68 /* Stats.swift */; };
+		5C7DADE92BA5BECE00D00E68 /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE32BA5BECD00D00E68 /* Meta.swift */; };
+		5C7DADEA2BA5BECE00D00E68 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE42BA5BECE00D00E68 /* Location.swift */; };
+		5C7DADEB2BA5BECE00D00E68 /* Geolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE52BA5BECE00D00E68 /* Geolocation.swift */; };
+		5C7DADEC2BA5BECE00D00E68 /* NearbyHomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE62BA5BECE00D00E68 /* NearbyHomeResponse.swift */; };
+		5C7DADED2BA5BECE00D00E68 /* Venues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADE72BA5BECE00D00E68 /* Venues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		5C7DADCE2BA5BDA000D00E68 /* PhonePeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonePeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C7DADD22BA5BDA000D00E68 /* PhonePeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeTestUITests.swift; sourceTree = "<group>"; };
 		5C7DADD42BA5BDA000D00E68 /* PhonePeTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePeTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C7DADE22BA5BECD00D00E68 /* Stats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		5C7DADE32BA5BECD00D00E68 /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meta.swift; sourceTree = "<group>"; };
+		5C7DADE42BA5BECE00D00E68 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		5C7DADE52BA5BECE00D00E68 /* Geolocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geolocation.swift; sourceTree = "<group>"; };
+		5C7DADE62BA5BECE00D00E68 /* NearbyHomeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyHomeResponse.swift; sourceTree = "<group>"; };
+		5C7DADE72BA5BECE00D00E68 /* Venues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		5C7DADB02BA5BD9D00D00E68 /* PhonePeTest */ = {
 			isa = PBXGroup;
 			children = (
+				5C7DADE12BA5BE1500D00E68 /* Service */,
 				5C7DADB12BA5BD9D00D00E68 /* AppDelegate.swift */,
 				5C7DADB32BA5BD9D00D00E68 /* SceneDelegate.swift */,
 				5C7DADB52BA5BD9D00D00E68 /* ViewController.swift */,
@@ -125,6 +138,19 @@
 				5C7DADD42BA5BDA000D00E68 /* PhonePeTestUITestsLaunchTests.swift */,
 			);
 			path = PhonePeTestUITests;
+			sourceTree = "<group>";
+		};
+		5C7DADE12BA5BE1500D00E68 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5C7DADE52BA5BECE00D00E68 /* Geolocation.swift */,
+				5C7DADE62BA5BECE00D00E68 /* NearbyHomeResponse.swift */,
+				5C7DADE42BA5BECE00D00E68 /* Location.swift */,
+				5C7DADE32BA5BECD00D00E68 /* Meta.swift */,
+				5C7DADE22BA5BECD00D00E68 /* Stats.swift */,
+				5C7DADE72BA5BECE00D00E68 /* Venues.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +285,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C7DADB62BA5BD9D00D00E68 /* ViewController.swift in Sources */,
+				5C7DADED2BA5BECE00D00E68 /* Venues.swift in Sources */,
+				5C7DADE82BA5BECE00D00E68 /* Stats.swift in Sources */,
+				5C7DADEB2BA5BECE00D00E68 /* Geolocation.swift in Sources */,
 				5C7DADB22BA5BD9D00D00E68 /* AppDelegate.swift in Sources */,
+				5C7DADE92BA5BECE00D00E68 /* Meta.swift in Sources */,
+				5C7DADEC2BA5BECE00D00E68 /* NearbyHomeResponse.swift in Sources */,
+				5C7DADEA2BA5BECE00D00E68 /* Location.swift in Sources */,
 				5C7DADB42BA5BD9D00D00E68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
