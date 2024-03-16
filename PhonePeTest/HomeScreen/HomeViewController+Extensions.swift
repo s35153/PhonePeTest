@@ -38,10 +38,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let venue = viewModel.item(at: indexPath.row)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.reuseIdentifier, for: indexPath) as? HomeTableViewCell else {
+            print("Error in reusing cell")
+            return UITableViewCell()
+        }
 
-        cell.textLabel?.text = venue?.name
-        cell.detailTextLabel?.text = venue?.display_location
+        cell.titleLabel.text = venue?.name
+        cell.detailLabel.text = venue?.display_location
 
         return cell
     }

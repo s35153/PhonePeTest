@@ -29,6 +29,7 @@
 		5C7DADFD2BA5CF4200D00E68 /* UserDataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADFC2BA5CF4200D00E68 /* UserDataMock.swift */; };
 		5C7DADFF2BA5CFF100D00E68 /* HomeViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */; };
 		5C7DAE012BA5D0B600D00E68 /* HomeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DAE002BA5D0B600D00E68 /* HomeViewViewModel.swift */; };
+		5C7DAE032BA5D98900D00E68 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7DAE022BA5D98900D00E68 /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		5C7DADFC2BA5CF4200D00E68 /* UserDataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataMock.swift; sourceTree = "<group>"; };
 		5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+Extensions.swift"; sourceTree = "<group>"; };
 		5C7DAE002BA5D0B600D00E68 /* HomeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewModel.swift; sourceTree = "<group>"; };
+		5C7DAE022BA5D98900D00E68 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		5C7DADF42BA5C6CE00D00E68 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				5C7DAE042BA5D9DB00D00E68 /* TableViewCell */,
 				5C7DADB52BA5BD9D00D00E68 /* HomeViewController.swift */,
 				5C7DAE002BA5D0B600D00E68 /* HomeViewViewModel.swift */,
 				5C7DADFE2BA5CFF100D00E68 /* HomeViewController+Extensions.swift */,
@@ -211,6 +214,14 @@
 				5C7DADFC2BA5CF4200D00E68 /* UserDataMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5C7DAE042BA5D9DB00D00E68 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5C7DAE022BA5D98900D00E68 /* HomeTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +375,7 @@
 				5C7DADEF2BA5BFC300D00E68 /* APIService.swift in Sources */,
 				5C7DADEC2BA5BECE00D00E68 /* NearbyHomeResponse.swift in Sources */,
 				5C7DADEA2BA5BECE00D00E68 /* Location.swift in Sources */,
+				5C7DAE032BA5D98900D00E68 /* HomeTableViewCell.swift in Sources */,
 				5C7DADB42BA5BD9D00D00E68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

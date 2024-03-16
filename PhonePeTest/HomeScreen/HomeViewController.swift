@@ -82,7 +82,7 @@ final class HomeViewController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: HomeTableViewCell.reuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
