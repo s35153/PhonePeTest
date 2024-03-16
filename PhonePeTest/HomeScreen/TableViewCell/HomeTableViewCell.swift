@@ -10,16 +10,16 @@ import SnapKit
 
 class HomeTableViewCell: UITableViewCell {
 
-    static let reuseIdentifier = "c"
+    static let reuseIdentifier = "cell"
 
-    let titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 16, weight: .semibold)
         label.textColor = .black
         return label
     }()
 
-    let detailLabel: UILabel = {
+    lazy var detailLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .gray
