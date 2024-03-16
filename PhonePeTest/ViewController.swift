@@ -12,6 +12,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
+
+
+        // Example usage:
+        let latitude = 12.971599 // User's current Latitude
+        let longitude = 77.594566 // User's current Longitude
+        let range = "12mi" // Filter to search venues based on distance
+        let query = "ub" // Filter venues based on name
+
+        APIService.fetchVenues(latitude: latitude, longitude: longitude, range: range, query: query) {
+            print($0)
+        }
+
     }
 
 
