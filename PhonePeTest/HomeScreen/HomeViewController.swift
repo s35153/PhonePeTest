@@ -8,7 +8,9 @@
 import UIKit
 import SnapKit
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
+
+    let viewModel = HomeViewViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,24 +18,15 @@ class HomeViewController: UIViewController {
         setupLoader()
         setupSearchBar()
         setupTableView()
+        setupKeyboardHandling()
 
         self.title = "PhonePe Test (Nearby App)"
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(resignSearchBarFirstResponder))
-        self.view.addGestureRecognizer(tapGesture)
 
-
-        let latitude = UserLocationMock.shared.latitude
-        let longitude = UserLocationMock.shared.longitude
-        let range = "12mi" // Filter to search venues based on distance
-        let query = "ub" // Filter venues based on name
-
-        APIService.fetchVenues(latitude: latitude, longitude: longitude, range: range, query: query) { [weak self] in
-            print($0)
-            DispatchQueue.main.async {
-                self?.loaderView.stopAnimating()
-            }
+        viewModel.fetchData()
+        viewModel.onDataUpdate = { [weak self] in
+            self?.loaderView.stopAnimating()
+            self?.tableView.reloadData()
         }
-
     }
 
     private func setupLoader() {
@@ -61,6 +54,11 @@ class HomeViewController: UIViewController {
             $0.top.equalTo(searchBar.snp.bottom).inset(-16)
             $0.left.right.bottom.equalTo(view.safeAreaLayoutGuide)
         }
+    }
+
+    private func setupKeyboardHandling() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(resignSearchBarFirstResponder))
+        self.view.addGestureRecognizer(tapGesture)
     }
 
     @objc private func resignSearchBarFirstResponder() {
